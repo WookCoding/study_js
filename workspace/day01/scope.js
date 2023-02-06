@@ -8,6 +8,12 @@ function f() {
     // console.log(this.x);
     // console.log(global.x);
     console.log(globalThis.x);
+
+    // for(var i =0; i<10; i++){
+    for(let i =0; i<10; i++){
+
+    }   
+    console.log(i);
 }
 
 f();
