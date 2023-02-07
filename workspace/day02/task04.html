@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>실습 4</title>
 </head>
-<body>
-        <!-- 
-        pr("%", 5);
-        결과 : %%%%%
-
-        위의 결과가 나오는 함수를 선언하여 사용한다.
-        출력은 콜백함수를 사용한다.
-     -->
-</body>
+<body></body>
 <script>
-    function prs(any, count,callback){
-        return callback(any,count);
+    let character = prompt("출력하실 문자를 입력하세요.");
+    let count = prompt("출력하실 횟수를 입력하세요.");
+    let text;
+    with(document){
+        text = `<h3>pr(<q>${character}</q>, ${count})</h3>`;
+        write(text);
+        write(`<button onclick="pr('${character}', ${count}, print)">결과 확인</button>`);
     }
 
-    function pr(any, count){
+    function pr(character, count, callback) {
         let result = "";
-        for(let i = 0; i < count; i++){
-            result += any;
+        for (let i = 0; i < count; i++) {
+            result += character;
         }
+        if(callback){
+            callback(result);
+            return;
+        }
+        return result;
+    }
 
-        document.write("결과 : " + result);
-    };
-
-    pr("@",19,pr);
-    
+    function print(result){
+        text += `<h4>결과: ${result}</h4>`;
+        document.write(text);
+    }
 </script>
 </html>
