@@ -4,6 +4,7 @@
 *.MF
 *.png
 *.lnk
+*.json
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/

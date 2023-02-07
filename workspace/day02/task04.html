@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- 
+        pr("%", 5);
+        결과 : %%%%%
+
+        위의 결과가 나오는 함수를 선언하여 사용한다.
+        출력은 콜백함수를 사용한다.
+     -->
+</body>
+<script>
+    function prs(any, count,callback){
+        return callback(any,count);
+    }
+
+    function pr(any, count){
+        let result = "";
+        for(let i = 0; i < count; i++){
+            result += any;
+        }
+
+        document.write("결과 : " + result);
+    };
+
+    pr("@",19,pr);
+    
+</script>
+</html>
