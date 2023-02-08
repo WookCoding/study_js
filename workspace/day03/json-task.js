@@ -38,6 +38,7 @@ let animalsJSON = JSON.stringify(animals);
 function avgAge(animalsJSON, callback){
     animals = JSON.parse(animalsJSON);
     let totalAge;
+    // reduce(total, data)일 경우 항상 total 값의 타입은 항상 data의 타입과 동일하게 설정된다.
     totalAge = animals.map(data => data.age).reduce((age, data) => age += data);
     
     if(callback){
