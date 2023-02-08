@@ -92,7 +92,6 @@ let input = "1024".split("");
 
 let result = input.map(input => hangle[input]).join("");
 console.log(result);
-
 // while(input != 0){
 //     result += hangle[input % 10] + result;
 //     input = parsInt(input / 10);
