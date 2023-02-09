@@ -28,21 +28,18 @@ products = JSON.stringify(products);
 //     }
 // });
 
-// file.readFile('shop.json', 'utf-8', (error, content) => {
-//     products = JSON.parse(content);
-//     let totalPrice = products.map(data => data.price).reduce((total, price) => total += price);
-//     let totalCount = products.map(data => data.count).reduce((total, count) => total += count);
-//     let result = {총가격: totalPrice*totalCount , 총재고수: totalCount};
+file.readFile('shop.json', 'utf-8', (error, content) => {
+    products = JSON.parse(content);
+    let totalPrice = products.map(data => data.price).reduce((total, price) => total += price);
+    let totalCount = products.map(data => data.count).reduce((total, count) => total += count);
+    let result = {총가격: totalPrice , 총재고수: totalCount};
 
-//     file.writeFile('sum.json', JSON.stringify(result), 'utf-8', error => {});
-// });
+    // file.writeFile('sum.json', JSON.stringify(result), 'utf-8', error => {});
+});
 
 file.readFile('sum.json', 'utf-8', (error, content) => {
     console.log(JSON.parse(content));
 });
-
-
-
 
 // function f(products,callback){
 //     products = JSON.parse(products);
