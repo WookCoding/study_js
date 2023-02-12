@@ -59,7 +59,7 @@ function changeToHangle(number) {
 
     for(let i in number) {
         temp = hangle[number.charAt(i)];
-
+        console.log(i + "번째");
         if(i == 0 && result == "영"){
             continue;
         }
