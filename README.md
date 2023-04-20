@@ -187,24 +187,26 @@ history 객체
    
 ------------------------------------------------------------------------------------------------
    
-jQuery
-   요소들을 선택하는 강력한 방법을 사용하고 선택된 요소들을
-   효율적으로 제어할 수 있는 자바스크립트 라이브러리이다.
-jQuery 기본 문법
-   $("선택자")
-값 가져오기
-   $("선택자").val(): 입력할 값을 가져올 때
-수정을 할 때에는 수정완료를 누르면 입력한 것을 다들고와야하기 때문에 value
-   $("선택자").text(): 미리 작성된 값을 가져올 때
- 수정 취소를 누르면 이전에 작성된 값을 가져와야 하기 때문에 text
-반복문
-   $.each(iterator, function(index, item){});
-   $.each(iterator, (index, item) => {});
-   iterator.each(function(index, item){});
-   iterator.each((index, item) => {});
-jQuery를 사용하면, 순수 Javascript에 비해 속도가 느려진다.
-하지만 간결한 문법으로 인해 개발 속도 증가와 처리비용 감소에 대한 장점이 있으며,
-60% 이상의 웹 사이트에서 사용하고 있기 때문에 적절한 상황에 맞춰 사용할 줄 알아야 한다.
+	jQuery
+   		요소들을 선택하는 강력한 방법을 사용하고 선택된 요소들을
+  		 효율적으로 제어할 수 있는 자바스크립트 라이브러리이다.
+	jQuery 기본 문법
+  	 	$("선택자")
+	값 가져오기
+  		$("선택자").val(): 입력할 값을 가져올 때
+		수정을 할 때에는 수정완료를 누르면 입력한 것을 다들고와야하기 때문에 value
+  		 $("선택자").text(): 미리 작성된 값을 가져올 때
+ 		수정 취소를 누르면 이전에 작성된 값을 가져와야 하기 때문에 text
+	반복문
+  	 	$.each(iterator, function(index, item){});
+   		$.each(iterator, (index, item) => {});
+  	 	iterator.each(function(index, item){});
+   		iterator.each((index, item) => {});
+		
+		jQuery를 사용하면, 순수 Javascript에 비해 속도가 느려진다.
+		하지만 간결한 문법으로 인해 개발 속도 증가와 처리비용 감소에 대한 장점이 있으며,
+		60% 이상의 웹 사이트에서 사용하고 있기 때문에 적절한 상황에 맞춰 사용할 줄 알아야 한다.
+----------------------------------------------------------------------------------------------   
 ![DOM01](https://user-images.githubusercontent.com/122762442/231784368-ef66a222-aced-4ebc-b6ca-6138edc0cc30.jpg)
 ![DOM02](https://user-images.githubusercontent.com/122762442/231784394-859de372-eb2d-4ef7-89c1-3667135e0cef.jpg)
 ![DOM03](https://user-images.githubusercontent.com/122762442/231784407-4fb12848-9837-416a-b4fa-0dcb815a3865.jpg)
